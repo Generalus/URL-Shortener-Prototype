@@ -12,27 +12,17 @@ import java.util.Date;
 @Data
 public class HashToURL {
 
+    String key;
     @DynamoDBHashKey
     private String hash;
-
     private String originalUrl;
-
-
-
     private Date expirationDate;
-
     private BigInteger counter;
 
-    String key;
-
-
     @DynamoDBAttribute
-    public String getOriginalUrl(){
+    public String getOriginalUrl() {
         return originalUrl;
     }
-
-
-
 
 
 }

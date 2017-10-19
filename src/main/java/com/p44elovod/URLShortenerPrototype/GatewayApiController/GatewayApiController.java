@@ -15,12 +15,13 @@ public class GatewayApiController {
     GatewayApiRepository repository;
 
     @GetMapping(value = "gateway-api/")
-    public String gateWayGeneralInformation (){
+    public String gateWayGeneralInformation() {
         return "Сервис формирования сокращенных ссылок";
     }
 
     @PostMapping(value = "gateway-api/")
-    public @ResponseBody void addNewLink(@RequestParam String link, String key, Date expiration_date){
+    public @ResponseBody
+    void addNewLink(@RequestParam String link, String key, Date expiration_date) {
 
         HashToURL hashToURL = new HashToURL();
         hashToURL.setOriginalUrl(link);
@@ -29,12 +30,7 @@ public class GatewayApiController {
         repository.save(hashToURL);
 
 
-
-
     }
-
-
-
 
 
 }
