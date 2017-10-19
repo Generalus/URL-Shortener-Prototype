@@ -18,6 +18,7 @@ public class HashToURL {
     private String originalUrl;
 
 
+
     private Date expirationDate;
 
     private BigInteger counter;
