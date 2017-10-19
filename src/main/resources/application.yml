@@ -1,0 +1,6 @@
+gateway-api:
+  ribbon:
+    eureka:
+      enabled: true
+    listOfServers: localhost:8090,localhost:9092,localhost:9999
+    ServerListRefreshInterval: 15000
