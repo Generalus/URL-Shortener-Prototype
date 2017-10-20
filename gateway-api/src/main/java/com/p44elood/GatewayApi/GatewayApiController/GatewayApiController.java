@@ -1,8 +1,8 @@
-package com.p44elovod.URLShortenerPrototype.GatewayApiController;
+package com.p44elood.GatewayApi.GatewayApiController;
 
 
-import com.p44elovod.URLShortenerPrototype.GatewayApiModel.HashToURL;
-import com.p44elovod.URLShortenerPrototype.GatewayApiRepository.GatewayApiRepository;
+import com.p44elood.GatewayApi.GatewayApiModel.HashToURL;
+import com.p44elood.GatewayApi.GatewayApiRepository.GatewayApiRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

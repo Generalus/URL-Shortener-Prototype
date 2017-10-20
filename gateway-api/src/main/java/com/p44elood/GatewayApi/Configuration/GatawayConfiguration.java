@@ -1,4 +1,4 @@
-package com.p44elovod.URLShortenerPrototype.GatewayApi.Configuration;
+package com.p44elood.GatewayApi.Configuration;
 
 
 import com.netflix.client.config.IClientConfig;

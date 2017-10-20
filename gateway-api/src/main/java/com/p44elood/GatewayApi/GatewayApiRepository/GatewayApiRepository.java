@@ -1,6 +1,6 @@
-package com.p44elovod.URLShortenerPrototype.GatewayApiRepository;
+package com.p44elood.GatewayApi.GatewayApiRepository;
 
-import com.p44elovod.URLShortenerPrototype.GatewayApiModel.HashToURL;
+import com.p44elood.GatewayApi.GatewayApiModel.HashToURL;
 import org.socialsignin.spring.data.dynamodb.repository.EnableScan;
 import org.springframework.data.repository.CrudRepository;
 

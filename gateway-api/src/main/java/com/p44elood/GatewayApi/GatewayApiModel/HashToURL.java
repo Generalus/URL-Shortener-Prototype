@@ -1,4 +1,4 @@
-package com.p44elovod.URLShortenerPrototype.GatewayApiModel;
+package com.p44elood.GatewayApi.GatewayApiModel;
 
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBAttribute;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBHashKey;
