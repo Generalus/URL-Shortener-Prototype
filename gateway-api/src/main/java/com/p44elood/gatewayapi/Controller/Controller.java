@@ -1,25 +1,25 @@
-package com.p44elood.GatewayApi.GatewayApiController;
+package com.p44elood.gatewayapi.Controller;
 
 
-import com.p44elood.GatewayApi.GatewayApiModel.HashToURL;
-import com.p44elood.GatewayApi.GatewayApiRepository.GatewayApiRepository;
+import com.p44elood.gatewayapi.Model.HashToURL;
+import com.p44elood.gatewayapi.Repository.Repository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Date;
 
 @RestController
-public class GatewayApiController {
+public class Controller {
 
     @Autowired
-    GatewayApiRepository repository;
+    Repository repository;
 
-    @GetMapping(value = "gateway-api/")
+    @GetMapping(value = "gateway-api")
     public String gateWayGeneralInformation() {
         return "Сервис формирования сокращенных ссылок";
     }
 
-    @PostMapping(value = "gateway-api/")
+    @PostMapping(value = "gateway-api")
     public @ResponseBody
     void addNewLink(@RequestParam String link, String key, Date expiration_date) {
 

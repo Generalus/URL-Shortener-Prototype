@@ -1,4 +1,4 @@
-package com.p44elood.GatewayApi.Configuration;
+package com.p44elood.gatewayapi.Configuration;
 
 
 import com.netflix.client.config.IClientConfig;
@@ -9,7 +9,7 @@ import com.netflix.loadbalancer.PingUrl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 
-public class GatawayConfiguration {
+public class Configuration {
 
     @Autowired
     IClientConfig ribbonClientConfig;

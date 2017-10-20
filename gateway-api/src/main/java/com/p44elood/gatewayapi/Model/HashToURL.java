@@ -1,4 +1,4 @@
-package com.p44elood.GatewayApi.GatewayApiModel;
+package com.p44elood.gatewayapi.Model;
 
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBAttribute;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBHashKey;
