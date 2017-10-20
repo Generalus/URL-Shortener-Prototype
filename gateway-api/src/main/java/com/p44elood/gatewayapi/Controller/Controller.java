@@ -14,12 +14,12 @@ public class Controller {
     @Autowired
     Repository repository;
 
-    @GetMapping(value = "gateway-api")
+    @GetMapping(value = "gateway-api/")
     public String gateWayGeneralInformation() {
         return "Сервис формирования сокращенных ссылок";
     }
 
-    @PostMapping(value = "gateway-api")
+    @PostMapping(value = "gateway-api/")
     public @ResponseBody
     void addNewLink(@RequestParam String link, String key, Date expiration_date) {
 
