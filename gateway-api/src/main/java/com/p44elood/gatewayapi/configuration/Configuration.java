@@ -1,4 +1,4 @@
-package com.p44elood.gatewayapi.Configuration;
+package com.p44elood.gatewayapi.configuration;
 
 
 import com.netflix.client.config.IClientConfig;
