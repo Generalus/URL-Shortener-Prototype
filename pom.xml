@@ -8,9 +8,9 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<modules>
 		<module>gateway-api</module>
-		<module>awsclient</module>
+		<module>aws-client</module>
 		<module>discovery-service</module>
-		<module>hystryxmonitor</module>
+		<module>hystryx-monitor</module>
 
 
 	</modules>
