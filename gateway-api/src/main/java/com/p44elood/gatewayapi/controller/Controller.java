@@ -2,11 +2,13 @@ package com.p44elood.gatewayapi.controller;
 
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Date;
 
 @RestController
+
 public class Controller {
 
 
