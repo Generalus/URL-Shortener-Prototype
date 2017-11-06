@@ -3,7 +3,7 @@ spring:
     name: gateway-api
 
 server:
-  port: 8080
+  port: 8082
 
 ping-server:
   ribbon:

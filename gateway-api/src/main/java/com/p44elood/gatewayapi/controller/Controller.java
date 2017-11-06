@@ -13,12 +13,8 @@ public class Controller {
 
     @PostMapping(value = "/gateway-api")
     public @ResponseBody
-    void addNewLink(@RequestParam String link, String key, Date expiration_date) {
-
-
+    void addNewLink(@RequestParam String link, String key, Date expirationDate) {
         System.out.println("sfsgdgdfgdfg");
-
-
     }
 
     @GetMapping(value = "/gateway-api")
@@ -30,7 +26,7 @@ public class Controller {
     @HystrixCommand(fallbackMethod = "error")
     @GetMapping(value = "/gateway-api/{link}")
     public String getQuery(@PathVariable("link") String link) {
-        throw new RuntimeException();
+        return "value";
     }
 
 

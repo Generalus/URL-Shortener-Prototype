@@ -15,7 +15,6 @@ import org.springframework.context.annotation.Configuration;
 @EnableDynamoDBRepositories(basePackages = "")
 public class DynamoDBConf {
 
-
     @Value("${amazon.dynamodb.endpoint}")
     private String amazonDynamoDBEndpoint;
 
@@ -28,21 +27,19 @@ public class DynamoDBConf {
 
     @Bean
     public AmazonDynamoDB amazonDynamoDB() {
-        AmazonDynamoDB amazonDynamoDB
-                = AmazonDynamoDBClientBuilder
+        return AmazonDynamoDBClientBuilder
                 .standard()
                 .withCredentials(new AWSStaticCredentialsProvider(amazonAWSCredentials()))
                 .withEndpointConfiguration(new AwsClientBuilder.EndpointConfiguration(amazonDynamoDBEndpoint, "Frankfurt"))
                 .build();
-
-
-        return amazonDynamoDB;
     }
 
     @Bean
     public AWSCredentials amazonAWSCredentials() {
         return new BasicAWSCredentials(
-                amazonAWSAccessKey, amazonAWSSecretKey);
+                amazonAWSAccessKey,
+                amazonAWSSecretKey
+        );
     }
 
 
