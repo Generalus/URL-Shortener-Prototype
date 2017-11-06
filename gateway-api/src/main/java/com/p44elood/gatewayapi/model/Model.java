@@ -12,7 +12,7 @@ public class Model {
 
     String key;
     private String link;
-    private Date expiration_date;
+    private Date expirationDate;
 
 
 

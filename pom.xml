@@ -8,8 +8,11 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<modules>
 		<module>gateway-api</module>
-		<module>awsclient</module>
+		<module>aws-client</module>
 		<module>discovery-service</module>
+		<module>hystryx-monitor</module>
+
+
 	</modules>
 	<packaging>pom</packaging>
 
@@ -31,6 +34,7 @@
 	</properties>
 
 <dependencies>
+
     <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-actuator</artifactId>
@@ -38,12 +42,22 @@
     <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-web</artifactId>
-
     </dependency>
 	<dependency>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-test</artifactId>
 		<scope>test</scope>
 	</dependency>
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-web</artifactId>
+		<version>1.4.0.RELEASE</version>
+	</dependency>
+	<dependency>
+		<groupId>org.projectlombok</groupId>
+		<artifactId>lombok</artifactId>
+		<optional>true</optional>
+	</dependency>
+	
 </dependencies>
 </project>
