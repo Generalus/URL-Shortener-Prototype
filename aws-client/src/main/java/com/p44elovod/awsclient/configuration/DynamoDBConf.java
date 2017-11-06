@@ -16,7 +16,6 @@ import org.springframework.context.annotation.Configuration;
 public class DynamoDBConf {
 
 
-
     @Value("${amazon.dynamodb.endpoint}")
     private String amazonDynamoDBEndpoint;
 
@@ -25,8 +24,6 @@ public class DynamoDBConf {
 
     @Value("${amazon.aws.secretkey}")
     private String amazonAWSSecretKey;
-
-
 
 
     @Bean
